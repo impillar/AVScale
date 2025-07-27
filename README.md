@@ -13,11 +13,25 @@
 + ./unsigning.py:		Remove the certificate of one app
   
  ## data: The generated apps after transformations and their original
- +./dynamic.csv:    "ORI_APP", "INDIRECT_APP" and "DIRECT_APP" are the original apps, apps with payloads, and payload apps, respectively.
- +./dynamic_capability.csv:  "ORI_APP", "SMS", "SCREEN", ... are the original apps, and apps with their malicious code executed by SMS broadcast receivers, screen receivers, present receivers, ...., respectively
+ + ./dynamic.csv:    "ORI_APP", "INDIRECT_APP" and "DIRECT_APP" are the original apps, apps with payloads, and payload apps, respectively.
+ + ./dynamic_capability.csv:  "ORI_APP", "SMS", "SCREEN", ... are the original apps, and apps with their malicious code executed by SMS broadcast receivers, screen receivers, present receivers, ...., respectively
  + ./fusion.csv:     "APP1", "APP2" and "FUSED_APP" are the two merged apps and the final app, respectively
  + ./packer.csv:     The fist column shows the hashcode of the original apps, and the second shows the packed apps' hashcode
  + ./prune.csv:		 "ORI_APP", "PRUNE_SMALI", "PRUNE_NATIVE" and "PRUNE_XML" are the original apps, apps without smali, apps without native, apps without xml
  + ./resig_aosp.csv: "ORI_APP", "RE-SIGN_AOSP" are the original apps and resigned apps with AOSP keys
  + ./resign_mykey.csv: "ORI_APP", "RE-SIGN_SELF_KEY" are the original apps and resigned apps with self keys
  + ./unsign.csv:		"ORI_APP", "UNSIGN" are the original apps and unsigned apps
+
+
+The code is for our paper <<Measuring and Explaining the Effects of Android App Transformations in Online Malware Detection>>. Please cite the following paper:
+
+ <code>
+ @inproceedings{meng-internetware25-avscale,
+    author = {Guozhu Meng and Zhixiu Guo and Xiaodong Zhang and Haoyu Wang and Kai Chen and Yang Liu},
+    title  = {{Measuring and Explaining the Effects of Android App Transformations in Online Malware Detection}},
+    booktitle = {{International Conference on Internetware 2025}},
+    year = {2025},
+    month = June,
+    address = {Trondheim, Norway}
+ }
+ </code>
