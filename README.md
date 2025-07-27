@@ -1,4 +1,4 @@
-# App Transformations in AVScale
+<H2>App Transformations in AVScale</H2>
 
 ## code: The main code for transforming an Android apps
 + ./backdoor.py:   Merge two apps into one
@@ -23,7 +23,7 @@
  + ./unsign.csv:		"ORI_APP", "UNSIGN" are the original apps and unsigned apps
 
 
-The code is for our paper <<Measuring and Explaining the Effects of Android App Transformations in Online Malware Detection>>. Please cite the following paper:
+<H2>The code is for our paper ``Measuring and Explaining the Effects of Android App Transformations in Online Malware Detection''. Please cite the following paper:</H2>
 
  <code>
  @inproceedings{meng-internetware25-avscale,
